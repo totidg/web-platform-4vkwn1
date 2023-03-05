@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Home</title>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width" />
+    <!--
+      Need a visual blank slate?
+      Remove all code in `styles.css`!
+    -->
+    <link rel="stylesheet" href="styles.css" />
+    <script type="module" src="script.js"></script>
+  </head>
+  <body>
+    <h1>Ingreso de Datos Personales</h1>
+    <form action="">
+      <div>
+        <label for="nombre"><strong>Nombre</strong></label
+        ><br />
+        <input type="text" name="nombre" maxlength="20" required /><br /><br />
+      </div>
+
+      <div>
+        <label for="apellido"><strong>Apellido</strong></label
+        ><br />
+        <input
+          type="text"
+          name="apellido"
+          maxlength="25"
+          required
+        /><br /><br />
+      </div>
+
+      <div>
+        <label for="dni"><strong>DNI</strong></label
+        ><br />
+        <input type="number" name="dni" required /><br /><br />
+      </div>
+
+      <div>
+        <label for="nacimiento"><strong>Fecha de Nacimiento</strong></label
+        ><br />
+        <input type="date" name="nacimiento" required /><br /><br />
+      </div>
+
+      <div>
+        <label for="email"><strong>Correo Electrónico</strong></label
+        ><br />
+        <input type="email" name="email" required /><br /><br />
+      </div>
+
+      <fieldset>
+        <legend><strong>Estado Civil</strong></legend>
+
+        <div>
+          <input type="radio" name="estado" value="solt" />
+          <label for="estado">Soltera/o</label>
+        </div>
+
+        <div>
+          <input type="radio" name="estado" value="cas" />
+          <label for="estado">Casada/o</label>
+        </div>
+
+        <div>
+          <input type="radio" name="estado" value="div" />
+          <label for="estado">Divorciada/o</label>
+        </div>
+
+        <div>
+          <input type="radio" name="estado" value="viud" />
+          <label for="estado">Viuda/o</label>
+        </div>
+
+        <div>
+          <input type="radio" name="estado" value="conv" />
+          <label for="estado">Conviviente</label>
+        </div>
+      </fieldset>
+      <br /><br />
+
+      <fieldset>
+        <legend><strong>Intereses</strong></legend>
+
+        <div>
+          <input type="checkbox" name="intereses" value="cult" />
+          <label for="intereses">Culturales</label>
+        </div>
+
+        <div>
+          <input type="checkbox" name="intereses" value="dep" />
+          <label for="intereses">Deportivos</label>
+        </div>
+
+        <div>
+          <input type="checkbox" name="intereses" value="tur" />
+          <label for="intereses">Turísticos</label>
+        </div>
+
+        <div>
+          <input type="checkbox" name="intereses" value="soc" />
+          <label for="intereses">Sociales</label>
+        </div>
+
+        <div>
+          <input type="checkbox" name="intereses" value="ot" />
+          <label for="intereses">Otros</label>
+        </div>
+      </fieldset><br>
+
+      <div>
+        <p><strong>Descripción de Intereses</strong></p>
+        <textarea
+          name="intereses"
+          cols="30"
+          rows="10"
+          maxlength="400"
+        ></textarea>
+      </div>
+      <br />
+
+      <div>
+        <p>
+          <strong>País de Residencia</strong>
+          <select name="pais">
+            <option value="arg">Argentina</option>
+            <option value="bol">Bolivia</option>
+            <option value="bra">Brasil</option>
+            <option value="col">Colombia</option>
+            <option value="cr">Costa Rica</option>
+            <option value="chi">Chile</option>
+            <option value="mex">México</option>
+            <option value="nic">Nicaragua</option>
+            <option value="pan">Panamá</option>
+            <option value="par">Paraguay</option>
+            <option value="per">Perú</option>
+            <option value="uru">Uruguay</option>
+            <option value="ven">Venezuela</option>
+            <option value="ot">Otro</option>
+          </select>
+        </p>
+      </div>
+      <br />
+
+      <fieldset>
+        <legend><strong>Recibir información adicional</strong></legend>
+
+        <div>
+          <input type="radio" name="info" value="si" checked />
+          <label for="info">Si</label>
+        </div>
+
+        <div>
+          <input type="radio" name="info" value="no" />
+          <label for="info">No</label>
+        </div>
+      </fieldset><br>
+
+      <input
+        type="image"
+        src="http://www.clker.com/cliparts/X/I/n/t/s/B/send-button.svg.hi.png"
+        width="100"
+        alt="Enviar"
+      />
+    </form>
+  </body>
+</html>
